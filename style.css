@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background-image {
+  background-image: url("./img/wallpaper-planto.jpeg");
+  background-size: cover;
+  -webkit-mask-image: linear-gradient(#000 70%, transparent);
+          mask-image: linear-gradient(#000 70%, transparent);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 500px;
+}
+
+.content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 80px;
+  line-height: 104px;
+  letter-spacing: -0.01em;
+}
+
+.content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 38.4px;
+}
+
+.navbar-brand {
+  padding-left: 50px;
+  margin-right: -120px !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px !important;
+  line-height: 32.81px !important;
+  letter-spacing: 0.01em !important;
+  font-weight: 500;
+  color: #FFFFFF !important;
+}
+
+.nav-item a {
+  font-family: "Roboto", sans-serif;
+  color: white !important;
+  font-size: 24px !important;
+  font-weight: 300 !important;
+  line-height: 21.09px !important;
+  white-space: nowrap !important;
+  transition: all 0.2s ease;
+}
+.nav-item a:hover {
+  scale: 1.1;
+  color: #E58411 !important;
+}
+
+.nav-middle {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.funiture-section nav {
+  position: absolute;
+  width: 100%;
+  padding-top: 20px;
+  background-color: transparent !important;
+  z-index: 2;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+.icon-container:hover {
+  scale: 1.2;
+}
+
+.badge-circle {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #E58411;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: none;
+  border: none !important;
+}
+
+.search {
+  width: 344px;
+  height: 56px;
+  position: relative;
+  top: -450px;
+}
+
+.form-control {
+  border-radius: 42px !important;
+  border: 0.86px solid rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+
+.form-control::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: white !important;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.form-control::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  color: white !important;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.circle {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  margin-top: 8px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #E58411;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:hover {
+  cursor: pointer !important;
+}
+
+.circle img {
+  width: 25px;
+  height: 25px;
+}
+
+input {
+  z-index: 3;
+  color: white !important;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 18px !important;
+  line-height: 27px !important;
+}
+
+.dropdown a {
+  background-color: transparent !important;
+  padding-top: 8px;
+}
+.dropdown a:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-menu a {
+  color: white !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.dropdown-menu {
+  background-color: transparent !important;
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 20px !important;
+}
+
+@media (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  .search {
+    top: 0px;
+  }
+  .content h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .content p {
+    font-size: 18px;
+    line-height: 34.4px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+    border-radius: 20px;
+    height: auto;
+    z-index: 5 !important;
+    width: 100%;
+  }
+  .navbar {
+    z-index: 5 !important;
+  }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dropdown-menu a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .icon-container {
+    position: absolute;
+    left: 250px;
+    z-index: 6;
+    bottom: 10px;
+  }
+}
+@media (max-width: 552px) {
+  .content h1 {
+    font-size: 40px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 448px) {
+  .content h1 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 420px) and (max-width: 660px) {
+  .icon-container {
+    position: absolute;
+    left: 300px;
+    z-index: 6;
+    bottom: 10px;
+  }
+}
+@media (min-width: 540px) and (max-width: 662px) {
+  .icon-container {
+    left: 400px;
+  }
+}
+@media (max-width: 384px) {
+  .content h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
